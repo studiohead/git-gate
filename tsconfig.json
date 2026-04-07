@@ -7,8 +7,11 @@
     "sourceMap": true,
     "rootDir": "src",
     "strict": true,
-    "types": ["node", "vscode"]
+    "types": ["node"]
   },
-  "include": ["src/**/*.ts"],
+  "devDependencies": {
+    "vscode": "^1.1.37",
+    "@types/vscode": "^1.110.0"
+  },  "include": ["src/**/*.ts"],
   "exclude": ["node_modules"]
 }
