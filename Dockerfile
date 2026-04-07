@@ -2,7 +2,7 @@ FROM ubuntu:24.04
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
-        git gcc python3 python3-pip && \
+        build-essential git python3 python3-pip && \
     rm -rf /var/lib/apt/lists/*
 
 # Copy and compile the enforcement engine at build time

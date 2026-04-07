@@ -4,6 +4,7 @@
     "SKILLS",
     ".AI_ORCHESTRATION",
     ".claude",
-    ".env-example"
+    ".env-example",
+    ".env"
   ]
 }
