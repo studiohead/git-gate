@@ -127,11 +127,11 @@ function nowHHMM(): string {
 }
 
 function logFilePath(context: vscode.ExtensionContext): string {
-    return path.join(context.globalStorageUri.fsPath, LOG_FILE);
+    return path.join(context.globalStoragePath, LOG_FILE);
 }
 
 function ensureLogDir(context: vscode.ExtensionContext) {
-    const dir = context.globalStorageUri.fsPath;
+    const dir = context.globalStoragePath;
     if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 }
 
