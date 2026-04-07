@@ -1,0 +1,57 @@
+{
+  "name": "git-gate",
+  "displayName": "Git Gate",
+  "description": "Prevents sensitive files from being accidentally staged or committed — built for agentic workflows.",
+  "publisher": "your-name",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "git",
+    "security",
+    "agent",
+    "env",
+    "secrets"
+  ],
+  "main": "./out/extension.js",
+  "scripts": {
+    "vscode:prepublish": "tsc -p ./",
+    "compile": "tsc -p ./"
+  },
+  "activationEvents": [
+    "*"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "git-gate.openDashboard",
+        "title": "Git Gate: Open Dashboard",
+        "icon": "$(shield)"
+      },
+      {
+        "command": "git-gate.manageSensitiveFiles",
+        "title": "Git Gate: Manage Rules"
+      }
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "git-gate.openDashboard"
+        },
+        {
+          "command": "git-gate.manageSensitiveFiles"
+        }
+      ]
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.39",
+    "@types/vscode": "^1.110.0",
+    "@vscode/vsce": "^3.0.0",
+    "typescript": "^5.9.3"
+  }
+}

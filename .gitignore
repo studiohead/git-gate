@@ -1,0 +1,30 @@
+# Node modules
+node_modules/
+
+# Output folder
+out/
+dist/
+lib/
+
+# VS Code extension package
+*.vsix
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment / local settings
+.env
+.vscode/
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Optional editor backup files
+*.swp
+*.swo

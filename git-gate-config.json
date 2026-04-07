@@ -1,0 +1,9 @@
+{
+  "sensitiveFiles": [
+    "agent.md",
+    "SKILLS",
+    ".AI_ORCHESTRATION",
+    ".claude",
+    ".env-example"
+  ]
+}
